@@ -1,0 +1,4 @@
+configMapGenerator:
+  - name: declarative-configs
+    files:
+      - configs/configs.yaml

@@ -1,0 +1,16 @@
+name: GitOps demo
+
+# Controls when the workflow will run
+on:
+  push:
+    branches: ["main"]
+  workflow_dispatch:
+
+jobs:
+  lint:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - name: Lint config file
+        run: |
+          ./roxctl declarative-config lint -f gitops/configs/configs.yaml

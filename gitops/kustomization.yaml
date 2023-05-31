@@ -2,3 +2,5 @@ configMapGenerator:
   - name: declarative-configs
     files:
       - configs/configs.yaml
+    options:
+      disableNameSuffixHash: true

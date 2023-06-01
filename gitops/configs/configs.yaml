@@ -9,7 +9,18 @@ resources:
     access: READ_ACCESS
 ---
 name: hello-world
-description: first declaratively created role
-permissionSet: hello-world # Referencing the previously created permission set.
-accessScope: UnrestrictedError # Referencing a system resource, the "Unrestricted" access scope.
+minimumRole: hello-world # Referencing the declarative minimum access role.
+uiEndpoint: https://central-stackrox.apps.dh-05-31-overconfident-price.openshift.infra.rox.systems
+groups:
+- key: "email"
+  value: "daniel@haus.de"
+  role: "Admin"
+oidc:
+  issuer: dhaus.eu.auth0.com
+  mode: fragment
+  clientID: JEH7b9q3zVScD3Pirmh173tB70NYCUcg
 ---
+name: hello-world
+description: first declaratively created role
+accessScope: Unrestricted
+permissionSet: hello-world

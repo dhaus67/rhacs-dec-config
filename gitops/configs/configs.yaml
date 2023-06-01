@@ -1,4 +1,4 @@
-name: hello-world
+name: hello-world-perm
 description: first declaratively created permission set
 resources:
   - resource: Integration
@@ -8,8 +8,8 @@ resources:
   - resource: Access
     access: READ_ACCESS
 ---
-name: hello-world
-minimumRole: hello-world # Referencing the declarative minimum access role.
+name: hello-world-provider
+minimumRole: hello-world-role # Referencing the declarative minimum access role.
 uiEndpoint: central-stackrox.apps.dh-05-31-overconfident-price.openshift.infra.rox.systems
 groups:
 - key: "email"
@@ -20,7 +20,7 @@ oidc:
   mode: fragment
   clientID: JEH7b9q3zVScD3Pirmh173tB70NYCUcg
 ---
-name: hello-world
+name: hello-world-role
 description: first declaratively created role
-accessScope: non-existing-scope
-permissionSet: hello-world
+accessScope: Unrestricted
+permissionSet: hello-world-perm

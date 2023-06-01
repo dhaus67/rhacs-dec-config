@@ -11,5 +11,5 @@ resources:
 name: hello-world
 description: first declaratively created role
 permissionSet: hello-world # Referencing the previously created permission set.
-accessScope: Unrestricted # Referencing a system resource, the "Unrestricted" access scope.
+accessScope: UnrestrictedError # Referencing a system resource, the "Unrestricted" access scope.
 ---

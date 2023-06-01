@@ -10,7 +10,7 @@ resources:
 ---
 name: hello-world
 minimumRole: hello-world # Referencing the declarative minimum access role.
-uiEndpoint: central-stackrox.apps.dh-05-31-overconfident-price.openshift.infra.rox.systems:443
+uiEndpoint: central-stackrox.apps.dh-05-31-overconfident-price.openshift.infra.rox.systems
 groups:
 - key: "email"
   value: "daniel@haus.de"
@@ -22,5 +22,5 @@ oidc:
 ---
 name: hello-world
 description: first declaratively created role
-accessScope: Unrestricted
+accessScope: non-existing-scope
 permissionSet: hello-world

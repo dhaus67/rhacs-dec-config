@@ -10,7 +10,7 @@ resources:
 ---
 name: hello-world
 minimumRole: hello-world # Referencing the declarative minimum access role.
-uiEndpoint: https://central-stackrox.apps.dh-05-31-overconfident-price.openshift.infra.rox.systems
+uiEndpoint: central-stackrox.apps.dh-05-31-overconfident-price.openshift.infra.rox.systems:443
 groups:
 - key: "email"
   value: "daniel@haus.de"

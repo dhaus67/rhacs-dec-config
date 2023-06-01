@@ -20,7 +20,4 @@ oidc:
   mode: fragment
   clientID: JEH7b9q3zVScD3Pirmh173tB70NYCUcg
 ---
-name: hello-world-role
-description: first declaratively created role
-accessScope: Unrestricted
-permissionSet: hello-world-perm
+

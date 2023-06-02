@@ -1,13 +1,3 @@
-name: hello-world-perm
-description: first declaratively created permission set
-resources:
-  - resource: Integration
-    access: READ_ACCESS
-  - resource: Administration
-    access: READ_ACCESS
-  - resource: Access
-    access: READ_ACCESS
----
 name: hello-world-provider
 minimumRole: hello-world-role # Referencing the declarative minimum access role.
 uiEndpoint: central-stackrox.apps.dh-05-31-overconfident-price.openshift.infra.rox.systems

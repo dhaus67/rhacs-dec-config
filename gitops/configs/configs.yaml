@@ -22,5 +22,5 @@ oidc:
 ---
 name: hello-world-role
 description: first declaratively created role
-accessScope: Unrestricted
+accessScope: non-existing-scope
 permissionSet: hello-world-perm

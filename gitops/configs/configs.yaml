@@ -13,4 +13,4 @@ oidc:
 name: hello-world-role
 description: first declaratively created role
 accessScope: Unrestricted
-permissionSet: hello-world-perm
+permissionSet: Analyst
